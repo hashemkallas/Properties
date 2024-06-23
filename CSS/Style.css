@@ -1,0 +1,174 @@
+/* home.html CSS */
+body {
+    background-color: rgb(247, 240, 177);
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pic {
+    margin: 1px;
+    width: 440px;
+    float: right;
+    display: flex;
+    text-align: left;
+
+}
+
+#logo {
+    margin: 0px;
+    width: 440px;
+    float: left;
+    display: flex;
+    text-align: left;
+
+}
+
+table caption p {
+    margin: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #113e64;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+Table th {
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #113e64;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+Table td {
+    font-size: 30px;
+    text-align: center;
+    font: 1.15em;
+    padding: 10px;
+    color: #113e64;
+    background-color: rgb(255, 255, 255);
+}
+
+Table {
+    width: 100%;
+
+}
+
+ul {
+    padding: 30px;
+    background-color: #113e64;
+    color: #e1e1e1;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a {
+    margin: auto;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #113e64;
+    padding: 25px;
+}
+
+/* AboutUs.html CSS */
+#imgtop {
+
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 355px;
+}
+
+h1 {
+    margin: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #113e64;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #113e64;
+
+}
+
+p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000a11;
+}
+
+#ul {
+    margin: auto;
+    font-size: 15px;
+    font-weight: bold;
+    color: #113e64;
+    background-color: #ffffff;
+    padding: 25px;
+}
+
+#continueButton {
+    width: 100px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+}
+
+#details {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    background-color: #333;
+
+
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+#captcha {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    user-select: none;
+
+
+}
+
+#send {
+
+    width: 100px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+
+}
