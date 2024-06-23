@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="JS/myFunctions.js" defer></script>
+</head>
+
+<body>
+    <img id="imgtop" src="img2/pic1.jpg" alt="">
+    <table id="propertiesTable">
+
+        <thead>
+            <tr>
+                <th> المدينة </th>
+                <th> تفاصيل </th>
+                <th> الايجار الشهري </th>
+                <th> اظهار التفاصيل </th>
+                <th> اختيار </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>دمشق</td>
+                <td>شقة غرفة وصالة مساحة 70م</td>
+                <td>500.000 ليرة سورية</td>
+                <td><button id="details" onclick="toggleDetails(this)"></button></td>
+                <td><input id="inputRadio" type="radio" name="property"
+                        value="دمشق, شقة غرفة وصالة مساحة 70م, 500.000 ل.س"></td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    المنطقة : ركن الدين<br>
+                    طابق ثالث<br>
+                    متوفر انترنت<br>
+                    <img width="300px" src="img2/A1.jpg" alt="">
+                    <img width="300px" src="img2/A2.jpg" alt="">
+                    <img width="300px" src="img2/A3.jpg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>حمص</td>
+                <td>دكان مساحة 50م</td>
+                <td>250.000 ليرة سورية</td>
+                <td><button id="details" onclick="toggleDetails(this)"></button></td>
+                <td><input id="inputRadio" type="radio" name="property" value="حمص, دكان مساحة 50م, 250.000 ل.س"></td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    المنطقة : الوعر<br>
+                    شارع عام<br>
+                    متوفر موقف سيارات<br>
+                    <img width="300px" src="img2/B1.jpg" alt="">
+                    <img width="300px" src="img2/B2.jpg" alt="">
+                    <img width="300px" src="img2/B3.jpg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>دمشق</td>
+                <td>شقة فارغة غرفتين وصالة مساحة 110م</td>
+                <td>600.000 ليرة سورية</td>
+                <td><button id="details" onclick="toggleDetails(this)"></button></td>
+                <td><input id="inputRadio" type="radio" name="property"
+                        value="دمشق, شقة غرفة وصالة مساحة 70م, 500.000 ل.س"></td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    المنطقة : المزة<br>
+                    طابق ارضي<br>
+                    حديقة 25م<br>
+                    <img width="300px" src="img2/C1.jpg" alt="">
+                    <img width="300px" src="img2/C2.jpg" alt="">
+                    <img width="300px" src="img2/C3.jpg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>حلب</td>
+                <td>معرض مساحة 400م</td>
+                <td>1.000.000 ليرة سورية</td>
+                <td><button id="details" onclick="toggleDetails(this)"></button></td>
+                <td><input id="inputRadio" type="radio" name="property"
+                        value="دمشق, شقة غرفة وصالة مساحة 70م, 500.000 ل.س"></td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    المنطقة : العزيزية<br>
+                    واجهة 20م<br>
+                    متوفر طاقة شمسية<br>
+                    <img width="300px" src="img2/D1.jpg" alt="">
+                    <img width="300px" src="img2/D2.jpg" alt="">
+                    <img width="300px" src="img2/D3.jpg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>اللاذقية</td>
+                <td>شاليه مساحة 40م</td>
+                <td>850.000 ليرة سورية</td>
+                <td><button id="details" onclick="toggleDetails(this)"></button></td>
+                <td><input id="inputRadio" type="radio" name="property"
+                        value="دمشق, شقة غرفة وصالة مساحة 70م, 500.000 ل.س"></td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    المنطقة : الشاطئ الازرق<br>
+                    اطلالة على البحر<br>
+                    متوفر كهرباء<br>
+                    <img width="300px" src="img2/E1.jpg" alt="">
+                    <img width="300px" src="img2/E2.jpg" alt="">
+                    <img width="300px" src="img2/E3.jpg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>دمشق</td>
+                <td>قبو مساحة 100م</td>
+                <td>400.000 ليرة سورية</td>
+                <td><button id="details" onclick="toggleDetails(this)"></button></td>
+                <td><input id="inputRadio" type="radio" name="property"
+                        value="دمشق, شقة غرفة وصالة مساحة 70م, 500.000 ل.س"></td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    المنطقة : الميدان<br>
+                    يوجد منتفعات<br>
+                    متوفر تهوية<br>
+                    <img width="300px" src="img2/F1.jpg" alt="">
+                    <img width="300px" src="img2/F2.jpg" alt="">
+                    <img width="300px" src="img2/F1.jpg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>طرطوس</td>
+                <td>شاليه مساحة 60م</td>
+                <td>900.000 ليرة سورية</td>
+                <td><button id="details" onclick="toggleDetails(this)"></button></td>
+                <td><input id="inputRadio" type="radio" name="property"
+                        value="دمشق, شقة غرفة وصالة مساحة 70م, 500.000 ل.س"></td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    المنطقة : الرمال<br>
+                    نسق ثاني<br>
+                    متوفر تكييف<br>
+                    <img width="300px" src="img2/G1.jpg" alt="">
+                    <img width="300px" src="img2/G2.jpg" alt="">
+                    <img width="300px" src="img2/G3.jpg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>درعا</td>
+                <td>ملحق على السطح 40م</td>
+                <td>100.000 ليرة سورية</td>
+                <td><button id="details" onclick="toggleDetails(this)"></button></td>
+                <td><input id="inputRadio" type="radio" name="property" value="درعا, ملحق على السطح 40م, 100.000 ل.س">
+                </td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    المنطقة : درعا البلد<br>
+                    طابق اخير<br>
+                    متوفر انترنت<br>
+                    <img width="300px" src="img2/A1.jpg" alt="">
+                    <img width="300px" src="img2/A2.jpg" alt="">
+                    <img width="300px" src="img2/A3.jpg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>ريف دمشق</td>
+                <td>شقة 3 غرف وصالة مساحة 120م</td>
+                <td>1.000.000 ليرة سورية</td>
+                <td><button id="details" onclick="toggleDetails(this)"></button></td>
+                <td><input id="inputRadio" type="radio" name="property"
+                        value="ريف دمشق, شقة 3 غرف وصالة مساحة 120م, 1.000.000 ل.س"></td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    المنطقة : ضاحية قدسيا<br>
+                    طابق ثاني<br>
+                    اطلالة جميلة<br>
+                    <img width="300px" src="img2/A1.jpg" alt="">
+                    <img width="300px" src="img2/A2.jpg" alt="">
+                    <img width="300px" src="img2/A3.jpg" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>دمشق</td>
+                <td>شقة غرفتين وصالة مساحة 100م</td>
+                <td>550.000 ليرة سورية</td>
+                <td><button id="details" onclick="toggleDetails(this)"></button></td>
+                <td><input id="inputRadio" type="radio" name="property"
+                        value="دمشق, شقة غرفتين وصالة مساحة 100م, 550.000 ل.س"></td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    المنطقة : جرمانا<br>
+                    طابق ارضي<br>
+                    متوفر امبيرات<br>
+                    <img width="300px" src="img2/A1.jpg" alt="">
+                    <img width="300px" src="img2/A2.jpg" alt="">
+                    <img width="300px" src="img2/A3.jpg" alt="">
+                </td>
+            </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+    <button id="continueButton" onclick="showForm()">متابعة</button>
+    <div id="formContainer" style="display: none;">
+        <form id="rentalForm" onsubmit="return validateForm()">
+            <label for="fullName">الاسم الكامل:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="الاسم باللغة العربية" pattern="[ء-ي ]+">
+            <label for="nationalId">الرقم الوطني:</label>
+            <input type="text" id="nationalId" name="nationalId" required
+                pattern="(01|02|03|04|05|06|07|08|09|10|11|12|13|14)\d{9}">
+            <label for="birthdate">تاريخ الولادة:</label>
+            <input type="date" id="birthDate" name="birthDate" min="1930-01-01" max="2030-01-01">
+            <label for="mobile">رقم الموبايل:</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="ex: 0900 000 000" maxlength="10"
+                pattern="(09[3-9]{8})">
+            <label for="email">الإيميل:</label>
+            <input type="email" id="email" name="email">
+            <label for="captcha">رمز التحقق:</label>
+            <input type="text" id="captchaInput" name="captcha" required>
+            <br>
+            <br>
+            <span id="captcha"></span>
+            <br>
+            <br>
+            <button id="send" type="submit">إرسال</button>
+        </form>
+    </div>
+    </main>
+    <nav>
+        <ul>
+            <li>
+                <a href="home.html">
+                    الصفحة الرئيسية
+                </a>
+            </li>
+            <br>
+            <br>
+            <li>
+                <a href="AboutUs.html">
+                    من نحن
+                </a>
+            </li>
+            <br>
+            <br>
+            <li>
+                <a href="">
+                    رابط النشر
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
